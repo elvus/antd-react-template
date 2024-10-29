@@ -4,6 +4,7 @@ import { StudentsList } from './pages/students';
 import { TeachersList } from './pages/teachers';
 import { DemoForm, ModalForm } from './pages/forms';
 import { MoviesCreate, MoviesList } from './pages/movies';
+import LoginForm from './pages/login';
 
 export const menuItems = [
     { key: '/', icon: <HomeOutlined />, label: 'Home', to: '/', component: <Home /> },
@@ -63,6 +64,12 @@ export const menuItems = [
             },
         ],
     },
+    {
+        key: 'login',
+        label: 'Login',
+        to: '/login',
+        component: <LoginForm />,
+    }
 ];
 
 export const strings = {
